@@ -65,7 +65,7 @@
                         v-model="input.value"
                         :label="input.label"
                         :type="input.type"
-                        />
+                    />
                     <button>Log in</button>
                 </form>
             `,   
@@ -89,7 +89,7 @@
             },
             methods: {
                 handleSubmit() {
-                    console.log(this.email, this.password)
+                    console.log(this.inputs[0].value, this.inputs[1].value)
                 }
             }
         })
